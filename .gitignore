@@ -1,0 +1,17 @@
+# python and IDE files
+venv/
+__pychache__/
+.idea/
+*.pyc
+
+# data
+home.db
+media/
+data/
+.env
+
+# logs and temp stuff
+*.tmp
+*.temp
+log.txt
+errlog.txt

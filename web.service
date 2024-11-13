@@ -1,0 +1,11 @@
+[Unit]
+Description=<APP_NAME> Web Service Worker
+
+[Service]
+Type=simple
+WorkingDirectory=/home/<USER>/<APP_NAME>
+ExecStart=/home/<USER>/<APP_NAME>/venv/bin/gunicorn -b localhost:5000 --workers=3 --access-logfile /home/<USER>/<APP_NAME>/logs/access.log --error-logfile /home/<USER>/<APP_NAME>/logs/err.log server:app --timeout 200
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

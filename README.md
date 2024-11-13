@@ -2,5 +2,6 @@
 
 ## How to use the template
 
-replace <DOMAIN> and <APP_NAME> in the entire app, all files.
+call `sh replace.sh` and follow the instructions
 
+It will basically replace <DOMAIN> and <APP_NAME> in the entire app.
